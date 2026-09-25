@@ -37,7 +37,8 @@ function handleQuoteSubmit(event) {
     `Project details: ${data.message}`
   ].join('\n');
 
-  const whatsappUrl = `https://wa.me/551133334444?text=${encodeURIComponent(text)}`;
+  const whatsappNumber = '9784893235';
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
   window.open(whatsappUrl, '_blank');
 
   const status = document.getElementById('quote-status');
