@@ -647,8 +647,32 @@ img {
 
   .category-grid,
   .features-grid,
-  .project-grid {
+  .project-grid,
+  .split-tabs {
     grid-template-columns: 1fr;
+  }
+
+  .split-tabs {
+    gap: 20px;
+  }
+
+  .split-card,
+  .split-card-left,
+  .split-card-right {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    clip-path: none;
+    overflow: hidden;
+  }
+
+  .split-card-inner,
+  .split-card-left .split-card-inner,
+  .split-card-right .split-card-inner {
+    width: 100%;
+    margin: 0;
+    padding: 24px 20px;
+    text-align: left;
   }
 
   .hero {
